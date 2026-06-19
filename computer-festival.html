@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechFest 2026 — Computer Festival</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- TAB NAV -->
+  <nav class="tab-nav">
+    <div class="nav-logo">TECHFEST '26</div>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="showPage('about', this)">01 · About</button>
+      <button class="tab-btn" onclick="showPage('venue', this)">02 · Time &amp; Place</button>
+      <button class="tab-btn" onclick="showPage('register', this)">03 · Register</button>
+    </div>
+  </nav>
+
+  <!-- ═══════ PAGE 1 — ABOUT ═══════ -->
+  <div id="page-about" class="page active">
+    <div class="grid-bg"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="about-wrap">
+      <div class="eyebrow">&#9670; Annual Computer Festival 2026</div>
+      <h1>The Future of<br><span class="grad">Technology</span><br>Starts Here</h1>
+      <p class="tagline">
+        TechFest 2026 brings together developers, designers, engineers,
+        and innovators for three days of inspiration, learning, and creation.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Keynote Talks</div>
+          <div class="card-body">World-class speakers from leading tech companies share their vision on AI, hardware,
+            and the digital future.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛠</div>
+          <div class="card-title">Hands-On Labs</div>
+          <div class="card-body">Dive deep into workshops on machine learning, cybersecurity, embedded systems, and
+            next-gen programming.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <div class="card-title">Hackathon</div>
+          <div class="card-body">48-hour hackathon with $25,000 in prizes. Build something remarkable alongside the
+            brightest minds in tech.</div>
+        </div>
+      </div>
+      <button class="btn" onclick="showPage('register', document.querySelectorAll('.tab-btn')[2])">
+        Secure Your Spot →
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══════ PAGE 2 — TIME & PLACE ═══════ -->
+  <div id="page-venue" class="page">
+    <div class="grid-bg"></div>
+    <div class="orb orb3"></div>
+    <div class="orb orb4"></div>
+    <div class="venue-wrap">
+      <div class="sec-head">
+        <div class="eyebrow">&#9670; Event Details</div>
+        <h2>When &amp; <span>Where</span></h2>
+        <p>Everything you need to plan your visit to TechFest 2026.</p>
+      </div>
+      <div class="venue-grid">
+        <div class="info-box">
+          <div class="info-label">📅 Date</div>
+          <div class="info-val">September 12–14, 2026</div>
+          <div class="info-sub">Three full days of programming.<br>Doors open at 8:00 AM each day.</div>
+        </div>
+        <div class="info-box">
+          <div class="info-label">📍 Location</div>
+          <div class="info-val">Silicon Hall, San Francisco</div>
+          <div class="info-sub">747 Market Street, San Francisco, CA 94103.<br>Near Powell Street BART & Muni station.
+          </div>
+        </div>
+        <div class="sched-box">
+          <div class="info-label">🗓 Daily Schedule</div>
+          <div class="sched-list">
+            <div class="sched-row">
+              <div class="sched-t">08:00 AM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Registration & Networking Breakfast</div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-t">09:30 AM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Opening Keynote — Main Stage</div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-t">11:00 AM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Breakout Sessions & Workshops</div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-t">01:00 PM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Lunch Break & Expo Floor Open</div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-t">02:30 PM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Hackathon Kickoff & Panel Talks</div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-t">06:00 PM</div>
+              <div class="sched-dot"></div>
+              <div class="sched-d">Evening Networking Reception</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════ PAGE 3 — REGISTER ═══════ -->
+  <div id="page-register" class="page">
+    <div class="grid-bg"></div>
+    <div class="orb orb5"></div>
+    <div class="reg-wrap">
+      <div class="eyebrow">&#9670; Limited Seats Available</div>
+      <h2>Register for<br><span>TechFest 2026</span></h2>
+      <p>Why is it $5 to attend this event? This money is for us to organize even bigger projects and festivals in the
+        future. We decided to host this event without any advertising or sponsorships so that you can fully enjoy the
+        festival. I hope you understand us. A huge thank you to everyone who supported us!.</p>
+      <div class="reg-form">
+        <div class="form-grp">
+          <label class="form-lbl" for="fullname">Full Name</label>
+          <input class="form-inp" type="text" id="fullname" placeholder="e.g. Otabek Erkinov" autocomplete="name" />
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="email">Email Address</label>
+          <input class="form-inp" type="email" id="email" placeholder="e.g. otabek@email.com" autocomplete="email" />
+        </div>
+        <div class="form-grp">
+          <label class="form-lbl" for="email">Card information</label>
+          <input class="form-inp" type="number" id="fullname" placeholder="e.g. 1234 5678 1111 2222"
+            autocomplete="cc-number" />
+        </div>
+        <button class="btn btn-full" onclick="submitForm()">Send My Invitation →</button>
+        <div class="success" id="successMsg">🎉 You're registered! Check your inbox for your TechFest 2026 invitation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showPage(name, btn) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('page-' + name).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    function submitForm() {
+      const name = document.getElementById('fullname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('successMsg');
+      if (!name) { alert('Please enter your full name.'); return; }
+      if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+      msg.style.display = 'block';
+      document.getElementById('fullname').value = '';
+      document.getElementById('email').value = '';
+      setTimeout(() => { msg.style.display = 'none'; }, 5000);
+    }
+  </script>
+
+</body>
+
+</html>
